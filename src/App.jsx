@@ -99,8 +99,8 @@ const App = () => {
                   <img src={webIcon} alt="" />
                 </div>
                 <div className="right">
-                  <h1>Web Design</h1>
-                  <p>I brought to just trying that with my boss; I'd get kicked out on the spot. But who knows would be the best</p>
+                  <h1>Website</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores voluptatem. Placeat, vel.</p>
                 </div>
               </div>
             </div>
@@ -111,8 +111,8 @@ const App = () => {
                   <img src={webIcon} alt="" />
                 </div>
                 <div className="right">
-                  <h1>Web Design</h1>
-                  <p>I brought to just trying that with my boss; I'd get kicked out on the spot. But who knows would be the best</p>
+                  <h1>Website</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores voluptatem. Placeat, vel.t</p>
                 </div>
               </div>
             </div>
@@ -123,8 +123,8 @@ const App = () => {
                   <img src={webIcon} alt="" />
                 </div>
                 <div className="right">
-                  <h1>Web Design</h1>
-                  <p>I brought to just trying that with my boss; I'd get kicked out on the spot. But who knows would be the best</p>
+                  <h1>Website</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores voluptatem. Placeat, vel.</p>
                 </div>
               </div>
             </div>
