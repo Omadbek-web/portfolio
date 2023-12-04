@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+.App{
+    *{
+        font-family: Quicksand;
+    }
+
+    nav.sticky{
+        background: #000;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    nav{
+        transition: .3s ;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px 0;
+        z-index: 10;
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left{
+                h1{
+                    color: #fff;
+                    user-select: none;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                column-gap: 25px;
+                a{
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    } // ! end nav
+
+
+    .sectionOne{
+        height: 800px;
+        background-image: url(./assets/walpaper.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top 100%;
+        
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 140px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            transform: rotate(180deg);
+            background: url(./assets/waves.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .one{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            
+            .name{
+                transform: translateY(-80px);
+                h1{
+                    font-size: 60px;
+                    font-weight: 300;
+                    color: #fff;
+                }
+                p{
+                    font-weight: 300;
+                    margin-top: 16px;
+                    font-size: 24px;
+                    color: #fff;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+        
+    } // ! end sectionOne
+
+    .sectionTwo{
+        padding-top: 100px;
+        padding-bottom: 200px;
+
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 140px;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            transform: rotate(180deg);
+            background: url(./assets/waves2.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .top{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            column-gap: 130px;
+            padding-bottom: 125px;
+            .left{
+                .image{
+                    position: relative;
+                    width: 384px;
+                    img{
+                        box-shadow: 0px 0px 21px rgb(0 0 0/50%);
+                        width: 100%;
+                    }
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        right: -50px;
+                        bottom: -50px;
+                        width: 100%;
+                        height: 100%;
+                        background: none;
+                        border: 1px solid #f3f2f2;
+                        z-index: -1;
+                        border-bottom-right-radius: 24px;
+                    }
+
+                }
+            }
+            .right{
+                padding-top: 50px;
+                p{
+                    margin-bottom: 16px;
+                    line-height: 2;
+                }
+            }
+        } // ! end top
+        .bottom{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            .cardBlock{
+                flex: 1;
+                padding: 22px 12px;
+                border-radius: 6px;
+                transition-duration: .3s;
+                min-width: 200px;
+
+                &:hover{
+                    background-color: rgba(249, 250, 251, 0.8)
+                }
+                .card{
+                    display: flex;
+                    align-items: flex-start;
+                    column-gap: 20px;
+                    row-gap: 20px;
+                    .left{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 25px;
+                            bottom: -35px;
+                            width: 1px;
+                            background: #e5e7eb;
+                            height: 40px;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 20.5px;
+                            bottom: -40px;
+                            width: 10px;
+                            background: #e5e7eb;
+                            height: 10px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .right{
+                        h1{
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                            margin-bottom: 12px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 2;
+                            color: rgb(51 51 51)
+
+                        }
+                    }
+                }
+            }
+        } // ! end bottom
+    } // ! end sectionTwo
+
+
+    .sectionThree{
+        padding-top: 100px;
+        padding-bottom: 200px;
+        background: #f9fafb;
+
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 140px;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            transform: rotate(180deg);
+            background: url(./assets/waves6.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .portfolio{
+
+        }
+        .categories{
+            padding-bottom: 40px;
+            .buttonGroup{
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+                button{
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            column-gap: 28px;
+            row-gap: 28px;
+            .card{
+                cursor: pointer;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .3s;
+
+                &:hover{
+                    box-shadow: 0 0 30px #cfcfcf99;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    } // !cend sectionThree
+
+
+    .sectionFour{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .top{
+
+        }
+        .bottom{
+            display: flex;
+            column-gap: 100px;
+
+            .left{
+                flex: 1;
+                min-width: 300px;
+
+                p{
+                    color: #333;
+                    margin-top: 20px;
+                }
+            }
+            .right{
+                flex: 2;
+                .form{
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    input{
+                        width: 100%;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    resize: none;
+                }
+                .inp{
+                    transition: .3s;
+                    outline: none;
+                    font-size: 14px;
+                    border: none;
+                    border-bottom: 1px solid rgba(229, 229, 229, 1);
+                    line-height: 2;
+                }
+                .inp:focus{
+                    color: rgb(0, 0, 0);
+                    border-color: #000;
+                }
+                .inp::placeholder{
+                    color: #a1a1a1;
+                }
+                .send{
+                    text-align: end;
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    button{
+                        padding: 12px 24px;
+                        background: #000;
+                        color: white;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        column-gap: 5px;
+
+                        img{
+                            transition: .3s;
+                            width: 20px;
+                        }
+
+                        &:hover{
+                            img{
+                                transform: translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // ! sectionFour
+}
+
+
+@media (max-width:1024px){
+    .App .sectionTwo .top{
+        column-gap: 100px;
+    }
+    .App .sectionTwo .top .right p{
+        font-size: 13px;
+    }
+    .App .sectionTwo .top .right{
+        padding-top: 0;
+    }
+    .App .sectionTwo .bottom .cardBlock .card .right p{
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    .App .sectionOne::after, 
+    .App .sectionTwo::before, 
+    .App .sectionThree::before{
+        height: 65px;
+        background-size: cover;
+    }
+}
+
+@media (max-width:870px){
+    .App .sectionOne{
+        height: 500px;
+    }
+    .App .sectionOne .one .name h1{
+        font-size: 40px;
+    }
+    .App .sectionOne .one .name p{
+        font-size: 20px;
+    }
+    .App .sectionThree .content{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .App .sectionTwo .top{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 70px;
+    }
+    .App .sectionTwo .bottom{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .App .sectionFour .bottom{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .App .sectionFour .bottom .right .form{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .App .sectionFour .bottom .right .send{
+        justify-content: center;
+    }
+}
+
+@media (max-width:550px){
+    .App .sectionOne{
+        height: 450px;
+    }
+    .App .sectionTwo .top .left .image img{
+        // max-width: 384px;
+        width: 100%;
+    }
+    .App .sectionTwo .top .left .image::before{
+        width: 0;
+        height: 0;
+        left: 0;
+        right: 0;
+        background: none;
+        border: none;
+    }
+    .App .sectionOne .one .name h1{
+        font-size: 30px;
+    }
+    .App .sectionOne .one .name p{
+        font-size: 14px;
+    }
+    .App .sectionOne::after{
+        height: 40px;
+    }
+}
+
+@media (max-width:470px){
+    .App .sectionOne .one .name{
+        transform: translateY(-50px);
+    }
+    .App .sectionTwo .top .left .image{
+        max-width: 374px;
+        width: auto;
+    }
+    .App .sectionOne{
+        height: 300px;
+    }
+    .App .sectionThree .content{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

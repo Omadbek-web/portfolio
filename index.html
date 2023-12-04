@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/us.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="elemnt"> website </title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+
+    <script>
+      let element = document.querySelector('#elemnt');
+      
+      let nameTitle = ['w', 'e', 'b', 's', 'i', 't', 'e', ' ']
+      
+      setInterval(() => {
+        let p = nameTitle.shift()
+        nameTitle.push(p)
+        element.innerHTML = nameTitle.join('')
+      }, 800)
+    </script>
+  </body>
+</html>
