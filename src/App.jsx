@@ -1,4 +1,6 @@
 
+import resume from './Sobirov.O.pdf'
+
 import './App.scss'
 import micFoto from './assets/mic.jpg'
 import aboutImage from './assets/person.png'
@@ -39,6 +41,7 @@ const App = () => {
               <li><a href="#about">About</a></li>
               <li><a href="#portfolio">portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href={resume} target='_blank'>resume</a></li>
             </ul>              
         </div>
       </nav>
