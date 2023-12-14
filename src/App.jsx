@@ -41,7 +41,7 @@ const App = () => {
               <li><a href="#about">About</a></li>
               <li><a href="#portfolio">portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href={resume} target='_blank'>resume</a></li>
+              <li><a href={resume} target='_blank'>Resume</a></li>
             </ul>              
         </div>
       </nav>
